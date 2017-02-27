@@ -1,4 +1,4 @@
-# DFA-1D
+# DFA-2D
 
 Command | Arguments description
 ------------ | -------------
@@ -7,8 +7,8 @@ Command | Arguments description
 -dt | Delimitador dos arquivos de entrada (use "\n" para cada dado em uma linha do arquivo)
 -f  | Nome do arquivo de saída, que contém as informações : nome do arquivo, valor do alpha, tempo de processamento
 
-O DFA-1D também gera o arquivo com extensão "flutuacao_.txt" para cada arquivo processado. A primeira coluna do arquivo refere-se ao log10(s) e a segunda, ao log10(F(s))
-
+O DFA-2D gera um arquivo de saída que contém as informações : nome do arquivo, valor do alpha, tempo de processamento de cada arquivo do diretório de entrada.
+Também gerado o arquivo com extensão "flutuacao_.txt", onde cada linha refere-se a flutuação log10(F(s)) de cada arquivo processado. O valor de s varia de 6 a n/4.
 
 ####Example
-	python DFA_1D/main.py -dI Data/ruidos/ -dO Data/ruidos -dt "\n" -f marrom.txt
+	python DFA_2D/main.py -dI Data/ruidos/ -dO Data/ruidos -dt "\n" -f marrom.txt
